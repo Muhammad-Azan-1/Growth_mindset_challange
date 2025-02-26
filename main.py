@@ -19,7 +19,7 @@ from rembg import remove
 #? Edit & Manipulate images (resize, crop, rotate, filter, enhance).
 #?  Convert images to different modes (grayscale, RGB, CMYK, etc.).
 #? Save images in different formats (PNG, JPG, GIF, etc.).
-from PIL import Image , ImageFilter
+from PIL import Image 
 
 
 #? 4) io.BytesIO The io module in Python provides an in-memory byte-stream class called BytesIO. This is used to temporarily store 
@@ -44,7 +44,7 @@ st.set_page_config(layout="wide", page_title="Image Background Remover") #? By d
 
 # function to load Css
 css_path = pathlib.Path("styles/global.css")
-def load_css():
+def load_external_css():
     """Loads an external CSS file in Streamlit"""
     if css_path.exists():  # Check if the CSS file exists
         with open(css_path, "r") as f:
@@ -54,7 +54,7 @@ def load_css():
         st.warning("⚠️ CSS file not found! Check the path.")
 
 # Call the function to load the CSS
-load_css()
+load_external_css()
 
 
 st.markdown("<h2 style='text-align:center; margin-bottom:50px'>Welcome to background image removal App</h2>" , unsafe_allow_html=True)
