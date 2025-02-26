@@ -21,7 +21,7 @@
 
   [data-testid="stSidebar"] {
     background-color: #fff; /* Change to any color */
-    color: black;
+
 }
 
 [data-testid="stSidebar"] button:hover {

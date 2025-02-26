@@ -57,8 +57,8 @@ def load_external_css():
 load_external_css()
 
 
-st.markdown("<h2 style='text-align:center; margin-bottom:50px'>Welcome to background image removal App</h2>" , unsafe_allow_html=True)
-st.sidebar.write("<h1 style=''>Upload your Image ⚙️</h1>" , unsafe_allow_html=True) 
+st.markdown("<h2 style='text-align:center; color:black; margin-bottom:50px'>Welcome to background image removal App</h2>" , unsafe_allow_html=True)
+st.sidebar.write("<h1 style='color:black'>Upload your Image ⚙️</h1>" , unsafe_allow_html=True) 
 
 
 
@@ -106,7 +106,7 @@ def get_uploaded_image(image):
         st.image(remove_image_bg)
 
     st.sidebar.markdown("\n")
-    st.sidebar.write("<h1 style=''>Download your Image ⚙️</h1>" , unsafe_allow_html=True) 
+    st.sidebar.write("<h1 style='color:black'>Download your Image ⚙️</h1>" , unsafe_allow_html=True) 
     st.sidebar.download_button("Download your Image" , download_image(remove_image_bg)) #passing the background removed image to the download_image function
   
 
