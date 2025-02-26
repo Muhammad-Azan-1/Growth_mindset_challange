@@ -1,0 +1,52 @@
+.stApp{
+
+        background: linear-gradient(273deg,#55ff87,#55c0ff,#bb55ff);
+        background-size: 180% 180%;
+        animation: gradient-animation 6s ease infinite;
+     color:black ;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  [data-testid="stSidebar"] {
+    background-color: #fff; /* Change to any color */
+    color: black;
+}
+
+[data-testid="stSidebar"] button:hover {
+  background-color:black; /* Change to any color */
+
+}
+
+
+/* Styling the Download Button */
+div.stDownloadButton > button {
+  background-color: #007BFF; 
+  color: white;
+  border-radius: 8px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+div.stDownloadButton > button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); 
+  color: white;
+}
+
+
+
