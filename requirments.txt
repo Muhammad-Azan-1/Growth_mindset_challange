@@ -1,0 +1,6 @@
+streamlit==1.30.0
+rembg==2.0.52
+Pillow==10.2.0
+io
+base64
+pathlib
